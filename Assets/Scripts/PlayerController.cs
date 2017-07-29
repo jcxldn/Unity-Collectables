@@ -61,6 +61,13 @@ public class PlayerController : MonoBehaviour {
                 winText.text = "You Win!";
                 menuButton.SetActive(true);
                 nextLevelButton.SetActive(true);
+
+                // Save string when level is completed
+                if (PlayerPrefs.GetString("HLC") == "")
+                {
+                    PlayerPrefs.SetString("HLC", "Level 1");
+                    Debug.Log("Set HLC to 1.");
+                }
             }
         }
         // Level 2 - 4 PickUps
@@ -71,6 +78,13 @@ public class PlayerController : MonoBehaviour {
                 winText.text = "You Win!";
                 menuButton.SetActive(true);
                 nextLevelButton.SetActive(true);
+
+                // Save string when level is completed
+                if (PlayerPrefs.GetString("HLC") == "Level 1")
+                {
+                    PlayerPrefs.SetString("HLC", "Level 2");
+                    Debug.Log("Set HLC to 2.");
+                }
             }
         }
         // Level 3 - 8 PickUps
@@ -81,6 +95,13 @@ public class PlayerController : MonoBehaviour {
                 winText.text = "You Win!";
                 menuButton.SetActive(true);
                 nextLevelButton.SetActive(true);
+
+                // Save string when level is completed
+                if (PlayerPrefs.GetString("HLC") == "Level 2")
+                {
+                    PlayerPrefs.SetString("HLC", "Level 3");
+                    Debug.Log("Set HLC to 3.");
+                }
             }
         }
     }
