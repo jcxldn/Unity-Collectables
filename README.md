@@ -18,6 +18,6 @@ Stable releases will have:
 
 **Notice: Only download Collectables from the official GitHub repo.**
 
-1. Download the .zip for the version you want to run [from here](https://github.com/Prouser123/Unity-Collectables/releases).
+1. Download the .zip for the version you want to run [from here](https://github.com/Prouser123/Unity-Collectables/releases/tag/v0.2.6b).
 2. Extract the .zip file, making sure that the Data folder is in the same directory as the .exe
 3. Run the .exe
