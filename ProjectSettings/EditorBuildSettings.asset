@@ -23,6 +23,3 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/L3.unity
     guid: 73d8c5907a8423d4f821f2d6962d2197
-  - enabled: 1
-    path: Assets/Scenes/Stats.unity
-    guid: 6f7f2e0e22c6ac0478c68c8b0db9761c
