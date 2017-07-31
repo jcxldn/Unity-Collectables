@@ -5,19 +5,18 @@ using UnityEngine.UI;
 public class RunSettings : MonoBehaviour {
 
     // Define Public Variables
-    public Button resetButton;
+    public bool resetData = false;
     
     void Start () {
 		
 	}
 	
 	void Update () {
-        resetButton.onClick.AddListener(resetTask);
+        if (resetData == true)
+        {
+            PlayerPrefs.DeleteAll();
+            Debug.LogWarning("The HLC PlayerPref has been cleared.");
+            resetData = false;
+        }
 	}
-
-    void resetTask()
-    {
-        PlayerPrefs.DeleteAll();
-        Debug.LogWarning("All PlayerPrefs have been deleted.");
-    }
 }
