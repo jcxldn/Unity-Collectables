@@ -11,6 +11,10 @@ public class LoadStats : MonoBehaviour {
     void Start () {
         PlayerPrefs.Save();
         HLCText.text = PlayerPrefs.GetString("HLC");
+        if (PlayerPrefs.GetString("HLC") == "")
+        {
+            HLCText.text = "No Levels Completed";
+        }
     }
 	
 	void Update () {
