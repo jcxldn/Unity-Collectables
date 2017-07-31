@@ -6,7 +6,6 @@ public class LoadScenes : MonoBehaviour {
 
     // Define Loadable Scenes
     public bool Menu = false;
-    public bool Stats = false;
     public bool Settings = false;
     public bool About = false;
     public bool L1 = false;
@@ -18,11 +17,6 @@ public class LoadScenes : MonoBehaviour {
         if (Menu == true)
         {
             SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
-        }
-
-        if (Stats == true)
-        {
-            SceneManager.LoadSceneAsync(6, LoadSceneMode.Single);
         }
 
         else if (Settings == true)
