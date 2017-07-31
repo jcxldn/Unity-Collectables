@@ -6,6 +6,8 @@ public class RunSettings : MonoBehaviour {
 
     // Define Public Variables
     public bool resetData = false;
+    public Button resetButton;
+    public Color highlightOff;
     
     void Start () {
 		
@@ -15,7 +17,12 @@ public class RunSettings : MonoBehaviour {
         if (resetData == true)
         {
             PlayerPrefs.DeleteAll();
-            Debug.LogWarning("The HLC PlayerPref has been cleared.");
+            Debug.LogWarning("All PlayerPrefs have been deleted.");
+            // Fix Button Colour
+            ColorBlock cb = resetButton.colors;
+            cb.highlightedColor = highlightOff;
+            resetButton.colors = cb;
+            // Set resetData to false to prevent a loop
             resetData = false;
         }
 	}
