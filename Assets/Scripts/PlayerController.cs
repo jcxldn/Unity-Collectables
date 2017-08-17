@@ -8,28 +8,34 @@ public class PlayerController : MonoBehaviour {
     private Rigidbody rb;
     private int count;
     private string levelNumber;
+    private bool isPaused = false;
 
     // Define Public Variables
     public float speed;
     public Text countText;
-    public Text winText;
-    public GameObject menuButton;
+    //public Text winText;
+    //public GameObject menuButton;
     public Text levelText;
     public GameObject levelInfo;
-    public GameObject nextLevelButton;
+    //public GameObject nextLevelButton;
+    // New Variables
+    public GameObject levelCompleted;
+    public GameObject levelPaused;
 
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
         LevelCompleted();
-        winText.text = "";
-        menuButton.SetActive(false);
-        nextLevelButton.SetActive(false);
+        //winText.text = "";
+        //menuButton.SetActive(false);
+        //nextLevelButton.SetActive(false);
+        levelCompleted.SetActive(false);
+        levelPaused.SetActive(false);
         LevelInfo();
     }
 
-	void FixedUpdate ()
+    void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -37,6 +43,30 @@ public class PlayerController : MonoBehaviour {
         Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
 
         rb.AddForce(movement);
+
+        // Pause Menu
+        KeyCode pause = KeyCode.Escape;
+        if (isPaused == false)
+        {
+            if (Input.GetKeyDown(pause))
+            {
+                levelPaused.SetActive(true);
+                isPaused = true;
+            }
+        } else if (isPaused == true)
+        {
+            if (Input.GetKeyDown(pause))
+            {
+                levelPaused.SetActive(false);
+                isPaused = false;
+            }
+        }
+    }
+
+    public void ReturnGameClicked()
+    {
+        levelPaused.SetActive(false);
+        isPaused = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -58,9 +88,10 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 4)
             {
-                winText.text = "You Win!";
-                menuButton.SetActive(true);
-                nextLevelButton.SetActive(true);
+                //winText.text = "You Win!";
+                //menuButton.SetActive(true);
+                //nextLevelButton.SetActive(true);
+                levelCompleted.SetActive(true);
 
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "")
@@ -75,9 +106,10 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 4)
             {
-                winText.text = "You Win!";
-                menuButton.SetActive(true);
-                nextLevelButton.SetActive(true);
+                //winText.text = "You Win!";
+                //menuButton.SetActive(true);
+                //nextLevelButton.SetActive(true);
+                levelCompleted.SetActive(true);
 
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "Level 1")
@@ -92,9 +124,10 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 8)
             {
-                winText.text = "You Win!";
-                menuButton.SetActive(true);
-                nextLevelButton.SetActive(true);
+                //winText.text = "You Win!";
+                //menuButton.SetActive(true);
+                //nextLevelButton.SetActive(true);
+                levelCompleted.SetActive(true);
 
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "Level 2")
