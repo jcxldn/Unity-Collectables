@@ -455,6 +455,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c48b42bb4ff93e468353fb8e84ef8f3, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &480368546 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114619881651139416, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+    type: 2}
+  m_PrefabInternal: {fileID: 480368545}
+  m_Script: {fileID: 11500000, guid: b208c1af39ca81343a0107aba8fec5fa, type: 3}
 --- !u!1 &725418837
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,6 +1547,46 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ReturnGameClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 114004411005095014, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 480368546}
+    - target: {fileID: 114004411005095014, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666999848153362, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 480368546}
+    - target: {fileID: 114666999848153362, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Scene_Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114541085124470098, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 480368546}
+    - target: {fileID: 114541085124470098, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Scene_Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 114450978525960696, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 480368546}
+    - target: {fileID: 114450978525960696, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Scene_Menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1bfd407e32c3bcd44a971b3457f69214, type: 2}

@@ -16,8 +16,4 @@ public class LoadStats : MonoBehaviour {
             HLCText.text = "No Levels Completed";
         }
     }
-	
-	void Update () {
-		
-	}
 }
