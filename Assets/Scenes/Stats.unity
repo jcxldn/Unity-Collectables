@@ -477,6 +477,11 @@ Prefab:
       propertyPath: Stats_HLCText
       value: 
       objectReference: {fileID: 17235255}
+    - target: {fileID: 114619881651139416, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: statsOpen
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0c48b42bb4ff93e468353fb8e84ef8f3, type: 2}
   m_IsPrefabParent: 0

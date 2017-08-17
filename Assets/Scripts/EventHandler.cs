@@ -14,14 +14,18 @@ public class EventHandler : MonoBehaviour {
     // Loading Stats
 
     public Text Stats_HLCText;
+    public bool statsOpen = false;
 
-    public void Stats()
+    private void Update()
     {
-        PlayerPrefs.Save();
-        Stats_HLCText.text = PlayerPrefs.GetString("HLC");
-        if (PlayerPrefs.GetString("HLC") == "")
+        if (statsOpen == true)
         {
-            Stats_HLCText.text = "No Levels Completed";
+            PlayerPrefs.Save();
+            Stats_HLCText.text = PlayerPrefs.GetString("HLC");
+            if (PlayerPrefs.GetString("HLC") == "")
+            {
+                Stats_HLCText.text = "No Levels Completed";
+            }
         }
     }
 

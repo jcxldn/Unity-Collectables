@@ -123,7 +123,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collectables v1.1-pre5
+  m_Text: Collectables v1.1-pre6
 --- !u!114 &114619881651139416
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Stats_HLCText: {fileID: 0}
+  statsOpen: 0
   settingsResetButton: {fileID: 0}
   settingsHighlightOff: {r: 255, g: 255, b: 255, a: 255}
-  levelID: {fileID: 0}
 --- !u!114 &114877031103034530
 MonoBehaviour:
   m_ObjectHideFlags: 1
