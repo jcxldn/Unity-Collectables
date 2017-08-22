@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour {
     void LevelCompleted()
     {
         countText.text = "Count: " + count.ToString();
+
         // Level 1 - 4 PickUps
         if (levelNumber == "L1")
         {
@@ -96,6 +97,7 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
         // Level 2 - 4 PickUps
         else if (levelNumber == "L2")
         {
@@ -111,6 +113,7 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
         // Level 3 - 8 PickUps
         else if (levelNumber == "L3")
         {
@@ -132,16 +135,19 @@ public class PlayerController : MonoBehaviour {
     {
         levelNumber = levelInfo.transform.name;
         Debug.Log("levelNumber: " + levelNumber);
+
         // Level 1
         if (levelNumber == "L1")
         {
             levelText.text = "Level 1";
         }
+
         // Level 2
         else if (levelNumber == "L2")
         {
             levelText.text = "Level 2";
         }
+
         // Level 3
         else if (levelNumber == "L3")
         {
