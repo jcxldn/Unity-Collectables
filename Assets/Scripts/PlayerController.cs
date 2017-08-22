@@ -5,20 +5,21 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour {
 
     // Define Private Variables
+
+    // Level Settings
     private Rigidbody rb;
     private int count;
     private string levelNumber;
     private bool isPaused = false;
 
     // Define Public Variables
+
+    // Level GUI/Settings
     public float speed;
     public Text countText;
-    //public Text winText;
-    //public GameObject menuButton;
     public Text levelText;
     public GameObject levelInfo;
-    //public GameObject nextLevelButton;
-    // New Variables
+    // Level Pause/End
     public GameObject levelCompleted;
     public GameObject levelPaused;
 
@@ -27,9 +28,6 @@ public class PlayerController : MonoBehaviour {
         rb = GetComponent<Rigidbody>();
         count = 0;
         LevelCompleted();
-        //winText.text = "";
-        //menuButton.SetActive(false);
-        //nextLevelButton.SetActive(false);
         levelCompleted.SetActive(false);
         levelPaused.SetActive(false);
         LevelInfo();
@@ -88,9 +86,6 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 4)
             {
-                //winText.text = "You Win!";
-                //menuButton.SetActive(true);
-                //nextLevelButton.SetActive(true);
                 levelCompleted.SetActive(true);
 
                 // Save string when level is completed
@@ -106,9 +101,6 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 4)
             {
-                //winText.text = "You Win!";
-                //menuButton.SetActive(true);
-                //nextLevelButton.SetActive(true);
                 levelCompleted.SetActive(true);
 
                 // Save string when level is completed
@@ -124,9 +116,6 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 8)
             {
-                //winText.text = "You Win!";
-                //menuButton.SetActive(true);
-                //nextLevelButton.SetActive(true);
                 levelCompleted.SetActive(true);
 
                 // Save string when level is completed
