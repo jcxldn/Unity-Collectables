@@ -2033,34 +2033,9 @@ Prefab:
       objectReference: {fileID: 1091048233}
     - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
         type: 2}
-      propertyPath: winText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
-        type: 2}
-      propertyPath: menuButton
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
-        type: 2}
       propertyPath: levelText
       value: 
       objectReference: {fileID: 1091048232}
-    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
-        type: 2}
-      propertyPath: levelInfo
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
-        type: 2}
-      propertyPath: next_levelButton
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
-        type: 2}
-      propertyPath: nextLevelButton
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
         type: 2}
       propertyPath: levelCompleted

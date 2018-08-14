@@ -44,6 +44,14 @@ public class PlayerController : MonoBehaviour {
 
         rb.AddForce(movement);
 
+        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        {
+            rb.angularVelocity = rb.angularVelocity / 2;
+            rb.velocity = rb.velocity / 2;
+            StartCoroutine(waitForSeconds(0.5f));
+
+        }
+
         // Pause Menu
         KeyCode pause = KeyCode.Escape;
         if (isPaused == false)
@@ -131,5 +139,12 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+    }
+
+    IEnumerator waitForSeconds(float seconds)
+    {
+        //print(Time.time);
+        yield return new WaitForSeconds(seconds);
+        //print(Time.time);
     }
 }
