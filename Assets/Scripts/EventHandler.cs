@@ -2,7 +2,8 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class EventHandler : MonoBehaviour {
+public class EventHandler : MonoBehaviour
+{
 
     // Quit the Game
 
@@ -45,41 +46,9 @@ public class EventHandler : MonoBehaviour {
         settingsResetButton.colors = cb;
     }
 
-// Loading Scenes
-
-// Menu - 0
-// Stats - 6
-// Settings - 1
-// About - 4
-// L1 - 2
-// L2 - 3
-// L3 - 5
-public void Scene_Menu()
+    // Scene Loader
+    public void LoadScene(int scene)
     {
-        SceneManager.LoadSceneAsync(0, LoadSceneMode.Single);
-    }
-    public void Scene_Stats()
-    {
-        SceneManager.LoadSceneAsync(6, LoadSceneMode.Single);
-    }
-    public void Scene_Settings()
-    {
-        SceneManager.LoadSceneAsync(1, LoadSceneMode.Single);
-    }
-    public void Scene_About()
-    {
-        SceneManager.LoadSceneAsync(4, LoadSceneMode.Single);
-    }
-    public void Scene_L1()
-    {
-        SceneManager.LoadSceneAsync(2, LoadSceneMode.Single);
-    }
-    public void Scene_L2()
-    {
-        SceneManager.LoadSceneAsync(3, LoadSceneMode.Single);
-    }
-    public void Scene_L3()
-    {
-        SceneManager.LoadSceneAsync(5, LoadSceneMode.Single);
+        SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single);
     }
 }
