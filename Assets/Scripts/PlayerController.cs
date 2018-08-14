@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
 
@@ -9,7 +10,7 @@ public class PlayerController : MonoBehaviour {
     // Level Settings
     private Rigidbody rb;
     private int count;
-    private string levelNumber;
+    //private string levelNumber;
     private bool isPaused = false;
 
     // Define Public Variables
@@ -18,7 +19,7 @@ public class PlayerController : MonoBehaviour {
     public float speed;
     public Text countText;
     public Text levelText;
-    public GameObject levelInfo;
+    //public GameObject levelInfo;
     // Level Pause/End
     public GameObject levelCompleted;
     public GameObject levelPaused;
@@ -30,7 +31,8 @@ public class PlayerController : MonoBehaviour {
         LevelCompleted();
         levelCompleted.SetActive(false);
         levelPaused.SetActive(false);
-        LevelInfo();
+        // Set level text
+        levelText.text = "Level " + SceneManager.GetActiveScene().name;
     }
 
     void FixedUpdate()
@@ -83,7 +85,7 @@ public class PlayerController : MonoBehaviour {
         countText.text = "Count: " + count.ToString();
 
         // Level 1 - 4 PickUps
-        if (levelNumber == "L1")
+        if (SceneManager.GetActiveScene().name == "1")
         {
             if (count == 4)
             {
@@ -99,7 +101,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         // Level 2 - 4 PickUps
-        else if (levelNumber == "L2")
+        else if (SceneManager.GetActiveScene().name == "2")
         {
             if (count == 4)
             {
@@ -115,7 +117,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         // Level 3 - 8 PickUps
-        else if (levelNumber == "L3")
+        else if (SceneManager.GetActiveScene().name == "3")
         {
             if (count == 8)
             {
@@ -128,35 +130,6 @@ public class PlayerController : MonoBehaviour {
                     Debug.Log("Set HLC to 3.");
                 }
             }
-        }
-    }
-
-    void LevelInfo()
-    {
-        levelNumber = levelInfo.transform.name;
-        Debug.Log("levelNumber: " + levelNumber);
-
-        // Level 1
-        if (levelNumber == "L1")
-        {
-            levelText.text = "Level 1";
-        }
-
-        // Level 2
-        else if (levelNumber == "L2")
-        {
-            levelText.text = "Level 2";
-        }
-
-        // Level 3
-        else if (levelNumber == "L3")
-        {
-            levelText.text = "Level 3";
-        }
-        else
-        {
-            Debug.LogError("Valid Level Number not found!\nLevel Info will now be disabled.");
-            levelText.text = "";
         }
     }
 }

@@ -643,7 +643,7 @@ Prefab:
     - target: {fileID: 224045144352334114, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 224045144352334114, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
         type: 2}
@@ -704,34 +704,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 364013531}
   m_Script: {fileID: 11500000, guid: b208c1af39ca81343a0107aba8fec5fa, type: 3}
---- !u!1 &397951098
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 397951099}
-  m_Layer: 0
-  m_Name: L1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &397951099
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 397951098}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &423498251
 Prefab:
   m_ObjectHideFlags: 0
@@ -1800,7 +1772,7 @@ RectTransform:
   - {fileID: 1091048236}
   - {fileID: 1091048235}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2078,7 +2050,7 @@ Prefab:
         type: 2}
       propertyPath: levelInfo
       value: 
-      objectReference: {fileID: 397951098}
+      objectReference: {fileID: 0}
     - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
         type: 2}
       propertyPath: next_levelButton
