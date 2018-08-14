@@ -94,7 +94,7 @@ public class PlayerController : MonoBehaviour {
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "")
                 {
-                    PlayerPrefs.SetString("HLC", "Level 1");
+                    PlayerPrefs.SetString("HLC", SceneManager.GetActiveScene().name);
                     Debug.Log("Set HLC to 1.");
                 }
             }
@@ -108,9 +108,9 @@ public class PlayerController : MonoBehaviour {
                 levelCompleted.SetActive(true);
 
                 // Save string when level is completed
-                if (PlayerPrefs.GetString("HLC") == "Level 1")
+                if (PlayerPrefs.GetString("HLC") == "1")
                 {
-                    PlayerPrefs.SetString("HLC", "Level 2");
+                    PlayerPrefs.SetString("HLC", SceneManager.GetActiveScene().name);
                     Debug.Log("Set HLC to 2.");
                 }
             }
@@ -124,9 +124,9 @@ public class PlayerController : MonoBehaviour {
                 levelCompleted.SetActive(true);
 
                 // Save string when level is completed
-                if (PlayerPrefs.GetString("HLC") == "Level 2")
+                if (PlayerPrefs.GetString("HLC") == "2")
                 {
-                    PlayerPrefs.SetString("HLC", "Level 3");
+                    PlayerPrefs.SetString("HLC", SceneManager.GetActiveScene().name);
                     Debug.Log("Set HLC to 3.");
                 }
             }
