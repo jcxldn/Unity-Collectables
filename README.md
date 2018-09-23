@@ -1,12 +1,16 @@
 # Collectables
 
-My first try at a Unity3D Game.
+![GitHub (pre-)release](https://img.shields.io/github/release/Prouser123/Unity-Collectables/all.svg)
+
+A Unity3D Game based on the tutorial.
+
+See releases for stable versions, as master will be in active development.
 
 # Notices
 
 **All builds are Windows x86 releases.**
 
-Starting from [v0.2.6b](https://github.com/Prouser123/Unity-Collectables/releases/tag/v0.2.6b), beta versions of Collectables will only have a portable version.
+Beta versions of Collectables will only have a portable version.
 
 Stable releases will have:
 
