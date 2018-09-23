@@ -177,6 +177,21 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        // Level 5 - 4 PickUps
+        else if (SceneManager.GetActiveScene().name == "5")
+        {
+            if (count == 4)
+            {
+                onLevelComplete();
+                // Save string when level is completed
+                if (PlayerPrefs.GetString("HLC") == "4")
+                {
+                    PlayerPrefs.SetString("HLC", SceneManager.GetActiveScene().name);
+                    Debug.Log("Set HLC to 5.");
+                }
+            }
+        }
     }
 
     void onLevelComplete()
