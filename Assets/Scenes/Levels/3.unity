@@ -303,6 +303,21 @@ Prefab:
       propertyPath: levelPaused
       value: 
       objectReference: {fileID: 2046392110}
+    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
+        type: 2}
+      propertyPath: eventSystem
+      value: 
+      objectReference: {fileID: 2066988183}
+    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
+        type: 2}
+      propertyPath: completeButton
+      value: 
+      objectReference: {fileID: 2046392112}
+    - target: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
+        type: 2}
+      propertyPath: pauseButton
+      value: 
+      objectReference: {fileID: 2046392113}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef031955242c47d4bade9b8e70cef7b5, type: 2}
   m_IsPrefabAsset: 0
@@ -1614,6 +1629,16 @@ GameObject:
 --- !u!1 &2046392111 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1836616662624276, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
+--- !u!1 &2046392112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1093056314780686, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
+--- !u!1 &2046392113 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1495428947104682, guid: 1bfd407e32c3bcd44a971b3457f69214,
     type: 2}
   m_PrefabInternal: {fileID: 2046392104}
 --- !u!1 &2066988181

@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour {
 
@@ -24,6 +25,11 @@ public class PlayerController : MonoBehaviour {
     public GameObject levelCompleted;
     public GameObject levelPaused;
 
+    // Controller Selection
+    public GameObject pauseButton;
+    public GameObject completeButton;
+    public EventSystem eventSystem;
+
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
@@ -33,6 +39,7 @@ public class PlayerController : MonoBehaviour {
         levelPaused.SetActive(false);
         // Set level text
         levelText.text = "Level " + SceneManager.GetActiveScene().name;
+        eventSystem = EventSystem.current;
     }
 
     void FixedUpdate()
@@ -60,6 +67,7 @@ public class PlayerController : MonoBehaviour {
             {
                 levelPaused.SetActive(true);
                 isPaused = true;
+                eventSystem.SetSelectedGameObject(pauseButton);
             }
         } else if (isPaused == true)
         {
@@ -98,6 +106,7 @@ public class PlayerController : MonoBehaviour {
             if (count == 4)
             {
                 levelCompleted.SetActive(true);
+                eventSystem.SetSelectedGameObject(completeButton);
 
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "")
@@ -114,6 +123,7 @@ public class PlayerController : MonoBehaviour {
             if (count == 4)
             {
                 levelCompleted.SetActive(true);
+                eventSystem.SetSelectedGameObject(completeButton);
 
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "1")
@@ -130,6 +140,7 @@ public class PlayerController : MonoBehaviour {
             if (count == 8)
             {
                 levelCompleted.SetActive(true);
+                eventSystem.SetSelectedGameObject(completeButton);
 
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "2")
