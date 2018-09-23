@@ -277,6 +277,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef031955242c47d4bade9b8e70cef7b5, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &169178008 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114471948620051092, guid: ef031955242c47d4bade9b8e70cef7b5,
+    type: 2}
+  m_PrefabInternal: {fileID: 169178007}
+  m_Script: {fileID: 11500000, guid: 6b47235d84b0ed440b40cb0121316dfa, type: 3}
 --- !u!1 &248120650 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1805109754556472, guid: ef031955242c47d4bade9b8e70cef7b5,
@@ -1382,6 +1388,16 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 114521254641365270, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 169178008}
+    - target: {fileID: 114521254641365270, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: enableMovement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bfd407e32c3bcd44a971b3457f69214, type: 2}

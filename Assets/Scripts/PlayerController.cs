@@ -69,9 +69,10 @@ public class PlayerController : MonoBehaviour {
 
         // Pause Menu
         KeyCode pause = KeyCode.Escape;
+        KeyCode xboxMenu = KeyCode.Joystick1Button7;
         if (isPaused == false)
         {
-            if (Input.GetKeyDown(pause))
+            if (Input.GetKeyDown(pause) || Input.GetKeyDown(xboxMenu))
             {
                 movementEnabled = false;
                 levelPaused.SetActive(true);
@@ -80,7 +81,7 @@ public class PlayerController : MonoBehaviour {
             }
         } else if (isPaused == true)
         {
-            if (Input.GetKeyDown(pause))
+            if (Input.GetKeyDown(pause) || Input.GetKeyDown(xboxMenu))
             {
                 movementEnabled = true;
                 levelPaused.SetActive(false);
@@ -208,5 +209,10 @@ public class PlayerController : MonoBehaviour {
         //print(Time.time);
         yield return new WaitForSeconds(seconds);
         //print(Time.time);
+    }
+
+    public void enableMovement()
+    {
+        movementEnabled = true;
     }
 }
