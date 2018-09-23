@@ -33,6 +33,7 @@ public class SceneInfo : EditorWindow {
             GUILayout.Label("       Level 1 - Scene ID 2");
             GUILayout.Label("       Level 2 - Scene ID 3");
             GUILayout.Label("       Level 3 - Scene ID 5");
+            GUILayout.Label("       Level 4 - Scene ID 7");
         }
     }
 }

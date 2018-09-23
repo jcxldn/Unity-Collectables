@@ -6,6 +6,9 @@ using UnityEngine.EventSystems;
 
 public class PlayerController : MonoBehaviour {
 
+    // Define EventHandler
+    public EventHandler EventHandler;
+
     // Define Private Variables
 
     // Level Settings
@@ -84,6 +87,14 @@ public class PlayerController : MonoBehaviour {
                 isPaused = false;
             }
         }
+
+        // Below map detection
+        if (this.transform.position.y < 0.49)
+        {
+            //SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
+            // Reload Active Scene
+            EventHandler.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
 
     public void ReturnGameClicked()
@@ -148,6 +159,21 @@ public class PlayerController : MonoBehaviour {
                 {
                     PlayerPrefs.SetString("HLC", SceneManager.GetActiveScene().name);
                     Debug.Log("Set HLC to 3.");
+                }
+            }
+        }
+
+        // Level 4 - 4 PickUps
+        else if (SceneManager.GetActiveScene().name == "4")
+        {
+            if (count == 4)
+            {
+                onLevelComplete();
+                // Save string when level is completed
+                if (PlayerPrefs.GetString("HLC") == "3")
+                {
+                    PlayerPrefs.SetString("HLC", SceneManager.GetActiveScene().name);
+                    Debug.Log("Set HLC to 4.");
                 }
             }
         }

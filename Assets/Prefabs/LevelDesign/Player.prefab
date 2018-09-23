@@ -112,6 +112,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b47235d84b0ed440b40cb0121316dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EventHandler: {fileID: 0}
   speed: 100
   countText: {fileID: 0}
   levelText: {fileID: 0}
@@ -120,6 +121,7 @@ MonoBehaviour:
   pauseButton: {fileID: 0}
   completeButton: {fileID: 0}
   eventSystem: {fileID: 0}
+  movementEnabled: 1
 --- !u!135 &135590232250235320
 SphereCollider:
   m_ObjectHideFlags: 1
