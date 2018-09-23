@@ -178,10 +178,10 @@ public class PlayerController : MonoBehaviour {
             }
         }
 
-        // Level 5 - 4 PickUps
+        // Level 5 - 5 PickUps
         else if (SceneManager.GetActiveScene().name == "5")
         {
-            if (count == 4)
+            if (count == 5)
             {
                 onLevelComplete();
                 // Save string when level is completed
