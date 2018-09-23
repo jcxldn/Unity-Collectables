@@ -16,8 +16,8 @@ notifications:
     on_failure: change
 
 # decrypt the encrypted SSH key file so it can be used for scp auth in post_build.sh
-before_install:
-- openssl aes-256-cbc -k "$KEYFILE_PASS" -in ".travis-scripts/upload.enc" -out ".travis-scripts/" -d
+#before_install:
+#- openssl aes-256-cbc -k "$KEYFILE_PASS" -in ".travis-scripts/upload.enc" -out ".travis-scripts/" -d
 
 # run the script to download and install Unity editor
 install:
