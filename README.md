@@ -4,7 +4,7 @@
 
 A Unity3D Game based on the tutorial.
 
-See releases for stable versions, as master will be in active development.
+See releases or tags for stable versions, as master will be in active development.
 
 # Notices
 
