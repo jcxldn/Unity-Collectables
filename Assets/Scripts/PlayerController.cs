@@ -30,6 +30,8 @@ public class PlayerController : MonoBehaviour {
     public GameObject completeButton;
     public EventSystem eventSystem;
 
+    public bool movementEnabled = true;
+
     void Start ()
     {
         rb = GetComponent<Rigidbody>();
@@ -44,19 +46,22 @@ public class PlayerController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
-
-        rb.AddForce(movement);
-
-        if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+        if (movementEnabled)
         {
-            rb.angularVelocity = rb.angularVelocity / 2;
-            rb.velocity = rb.velocity / 2;
-            StartCoroutine(waitForSeconds(0.5f));
+            float moveHorizontal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
 
+            Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
+
+            rb.AddForce(movement);
+
+            if (Input.GetAxis("Horizontal") == 0 && Input.GetAxis("Vertical") == 0)
+            {
+                rb.angularVelocity = rb.angularVelocity / 2;
+                rb.velocity = rb.velocity / 2;
+                StartCoroutine(waitForSeconds(0.5f));
+
+            }
         }
 
         // Pause Menu
@@ -65,6 +70,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (Input.GetKeyDown(pause))
             {
+                movementEnabled = false;
                 levelPaused.SetActive(true);
                 isPaused = true;
                 eventSystem.SetSelectedGameObject(pauseButton);
@@ -73,6 +79,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (Input.GetKeyDown(pause))
             {
+                movementEnabled = true;
                 levelPaused.SetActive(false);
                 isPaused = false;
             }
@@ -105,9 +112,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 4)
             {
-                levelCompleted.SetActive(true);
-                eventSystem.SetSelectedGameObject(completeButton);
-
+                onLevelComplete();
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "")
                 {
@@ -122,9 +127,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 4)
             {
-                levelCompleted.SetActive(true);
-                eventSystem.SetSelectedGameObject(completeButton);
-
+                onLevelComplete();
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "1")
                 {
@@ -139,9 +142,7 @@ public class PlayerController : MonoBehaviour {
         {
             if (count == 8)
             {
-                levelCompleted.SetActive(true);
-                eventSystem.SetSelectedGameObject(completeButton);
-
+                onLevelComplete();
                 // Save string when level is completed
                 if (PlayerPrefs.GetString("HLC") == "2")
                 {
@@ -150,6 +151,15 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+    }
+
+    void onLevelComplete()
+    {
+        levelCompleted.SetActive(true);
+        movementEnabled = false;
+        eventSystem.SetSelectedGameObject(completeButton);
+        rb.angularVelocity = new Vector3(0, 0, 0);
+        rb.velocity = new Vector3(0, 0, 0);
     }
 
     IEnumerator waitForSeconds(float seconds)
