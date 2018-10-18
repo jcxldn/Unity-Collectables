@@ -1,5 +1,6 @@
 # Collectables
 
+![Unity Version](https://img.shields.io/badge/unity-2018.2.9f1-blue.svg)
 ![GitHub (pre-)release](https://img.shields.io/github/release/Prouser123/Unity-Collectables/all.svg)
 
 A Unity3D Game based on the tutorial.
