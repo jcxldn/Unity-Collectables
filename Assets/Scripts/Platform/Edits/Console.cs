@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Kodi;
 
 namespace Platform.Edits
 {
@@ -11,7 +12,7 @@ namespace Platform.Edits
         public void scalingSetup()
         {
             Debug.Log(PlatformManager.Instance.Global.canvas.scaleFactor);
-            Debug.Log("Scaling Setup");
+            Log.type.platformXDK("Exec: Scaling Setup");
             // 1.5f Scaling
             PlatformManager.Instance.Global.canvas.scaleFactor = 1.5f;
             PlatformManager.Instance.Scene.canvas.scaleFactor = 1.5f;
@@ -21,13 +22,14 @@ namespace Platform.Edits
             }
             catch (Exception e)
             {
-                Debug.LogWarning("Error on Text, Continuing... : " + e);
+                Log.type.platformWarning("Error on Text, Continuing... : " + e);
             }
         }
 
         // Move UI to fix any overscan visibility conflicts
         public void OverScanUISetup()
         {
+            Log.type.platformXDK("Exec: Overscan UI Setup");
             PlatformManager.Instance.Global.elements.FPS.transform.position = new Vector3(110, 115, 0);
             PlatformManager.Instance.Global.elements.version.transform.position = new Vector3(110, 110, 0);
             PlatformManager.Instance.Global.elements.panel.SetActive(true);
@@ -45,7 +47,7 @@ namespace Platform.Edits
             // Catch if used on non level scene
             catch (Exception e)
             {
-                Debug.LogWarning("Error on Level UI Elements, Continuing... : " + e);
+                Log.type.platformWarning("Error on Level UI Elements, Continuing... : " + e);
             }
 
         }

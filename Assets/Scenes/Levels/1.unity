@@ -359,11 +359,6 @@ Prefab:
       objectReference: {fileID: 144231913}
     - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
         type: 2}
-      propertyPath: Scene.levelUIElements.canvas
-      value: 
-      objectReference: {fileID: 144231913}
-    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
-        type: 2}
       propertyPath: Scene.levelUIElements.countText
       value: 
       objectReference: {fileID: 318775839}
@@ -1510,6 +1505,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1567853564}
+    - target: {fileID: 224459400017315514, guid: 1bfd407e32c3bcd44a971b3457f69214,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bfd407e32c3bcd44a971b3457f69214, type: 2}
   m_IsPrefabAsset: 0

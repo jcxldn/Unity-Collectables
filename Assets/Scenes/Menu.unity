@@ -1615,6 +1615,11 @@ Prefab:
       propertyPath: scalingInfo
       value: 
       objectReference: {fileID: 1624119958}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: debugOverrides.disabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c48b42bb4ff93e468353fb8e84ef8f3, type: 2}
   m_IsPrefabAsset: 0

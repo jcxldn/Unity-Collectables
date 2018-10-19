@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 4022058381374444}
   - component: {fileID: 114619881651139416}
   - component: {fileID: 114791712512511678}
+  - component: {fileID: 114940623649289778}
   m_Layer: 0
   m_Name: EventHandler
   m_TagString: Untagged
@@ -206,10 +207,12 @@ MonoBehaviour:
   Scene:
     canvas: {fileID: 0}
     levelUIElements:
-      canvas: {fileID: 0}
       countText: {fileID: 0}
       levelText: {fileID: 0}
       panel: {fileID: 0}
+  debugOverrides:
+    disabled: 0
+    XDKOptions: 1
   scalingInfo: {fileID: 0}
 --- !u!114 &114820347537284390
 MonoBehaviour:
@@ -292,6 +295,23 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114940623649289778
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1465209039763262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac9dcd1a772d9c34aa10d6c75bc34ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  logPrefixes:
+    debug: '[Debug]'
+    platform:
+      manager: '[Platform Manager]'
+      debug: '[P.Info Debug]'
+      XDK: '[P.XDK Debug]'
 --- !u!222 &222484329945471572
 CanvasRenderer:
   m_ObjectHideFlags: 1
