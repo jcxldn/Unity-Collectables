@@ -205,6 +205,11 @@ MonoBehaviour:
       panel: {fileID: 1612685257522280}
   Scene:
     canvas: {fileID: 0}
+    levelUIElements:
+      canvas: {fileID: 0}
+      countText: {fileID: 0}
+      levelText: {fileID: 0}
+      panel: {fileID: 0}
   scalingInfo: {fileID: 0}
 --- !u!114 &114820347537284390
 MonoBehaviour:

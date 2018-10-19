@@ -730,6 +730,21 @@ Prefab:
       propertyPath: Scene.canvas
       value: 
       objectReference: {fileID: 2046392105}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.countText
+      value: 
+      objectReference: {fileID: 2046392109}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.levelText
+      value: 
+      objectReference: {fileID: 2046392106}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.panel
+      value: 
+      objectReference: {fileID: 1951992370}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c48b42bb4ff93e468353fb8e84ef8f3, type: 2}
   m_IsPrefabAsset: 0
@@ -1751,6 +1766,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1951992370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1515019823879830, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
 --- !u!1001 &1985598918
 Prefab:
   m_ObjectHideFlags: 0

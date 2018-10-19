@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 // Objects for all platforms
 
@@ -26,5 +27,14 @@ namespace Platform.Elements
     public class Scene
     {
         public Canvas canvas;
+        public LevelElements levelUIElements;
+
+        [System.Serializable]
+        public class LevelElements
+        {
+            public Text countText;
+            public Text levelText;
+            public GameObject panel;
+        }
     }
 }

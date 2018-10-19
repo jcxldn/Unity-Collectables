@@ -41,6 +41,7 @@ namespace Platform
             Debug.Log("testing");
             Console.scalingSetup();
             Console.OverScanUISetup();
+            Console.OverScanLevelUISetup();
         }
     }
 }

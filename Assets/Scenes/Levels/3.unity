@@ -332,6 +332,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 166874360}
   m_Script: {fileID: 11500000, guid: 6b47235d84b0ed440b40cb0121316dfa, type: 3}
+--- !u!1 &227016078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1515019823879830, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
 --- !u!1001 &363336612
 Prefab:
   m_ObjectHideFlags: 0
@@ -476,6 +481,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.canvas
+      value: 
+      objectReference: {fileID: 791106006}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.countText
+      value: 
+      objectReference: {fileID: 2046392109}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.levelText
+      value: 
+      objectReference: {fileID: 2046392106}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.panel
+      value: 
+      objectReference: {fileID: 227016078}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c48b42bb4ff93e468353fb8e84ef8f3, type: 2}
   m_IsPrefabAsset: 0
@@ -653,6 +678,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4586716388843632, guid: 65a3b5c8a71189f4d9d017df8116631a,
     type: 2}
   m_PrefabInternal: {fileID: 761730091}
+--- !u!223 &791106006 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 223933675418650544, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
 --- !u!1 &899706328
 GameObject:
   m_ObjectHideFlags: 0
