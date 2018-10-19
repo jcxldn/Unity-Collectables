@@ -9,36 +9,38 @@ namespace Platform
 
     public class PlatformManager : MonoBehaviour
     {
-
-        // Visible Refrences
-        public Elements.global global;
-        [Space]
-        public Elements.scene scene;
-        [Space]
-        public Text scalingInfo;
-
         // Instancing
-        //Edits.Console console;
-
-
+        // ONLY MAKE ONE SET OF INSTANCES IN ALL FILES INVOLVED
         public static PlatformManager Instance;
-        
+
         void Awake()
         {
             Instance = this;
         }
 
+        // Visible Instancing
+        public Elements.Global Global = new Elements.Global();
+        [Space]
+        public Elements.Scene Scene = new Elements.Scene();
+        [Space]
+        public Text scalingInfo;
+
+        // Hidden Instancing
+        //[System.NonSerialized]
+        Edits.Console Console = new Edits.Console();
+
+
         void Start()
         {
             // Apply scaling options if on console (XDK)
-            if (SystemInfo.deviceType == DeviceType.Console)
-            {
-                console.OverScanUISetup();
-                console.scalingSetup();
-            }
+            //if (SystemInfo.deviceType == DeviceType.Console)
+            //{
+            //    console.OverScanUISetup();
+            //    console.scalingSetup();
+            //}
             Debug.Log("testing");
-            console.scalingSetup();
-            //console.OverScanUISetup();
+            Console.scalingSetup();
+            Console.OverScanUISetup();
         }
     }
 }

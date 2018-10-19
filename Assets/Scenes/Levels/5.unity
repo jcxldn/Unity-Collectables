@@ -725,6 +725,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.canvas
+      value: 
+      objectReference: {fileID: 2046392105}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c48b42bb4ff93e468353fb8e84ef8f3, type: 2}
   m_IsPrefabAsset: 0
@@ -2102,6 +2107,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bfd407e32c3bcd44a971b3457f69214, type: 2}
   m_IsPrefabAsset: 0
+--- !u!223 &2046392105 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 223933675418650544, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
 --- !u!114 &2046392106 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114507135641379768, guid: 1bfd407e32c3bcd44a971b3457f69214,
