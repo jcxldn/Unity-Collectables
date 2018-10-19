@@ -152,7 +152,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Collectables v2.0b2-pre1
+  m_Text: Collectables v2.0b2-pre2
 --- !u!114 &114619881651139416
 MonoBehaviour:
   m_ObjectHideFlags: 1
