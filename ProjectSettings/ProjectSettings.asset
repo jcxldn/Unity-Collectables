@@ -555,11 +555,11 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: Collectables
   metroPackageVersion: 
-  metroCertificatePath: 
+  metroCertificatePath: Assets\WSATestCertificate.pfx
   metroCertificatePassword: 
-  metroCertificateSubject: 
-  metroCertificateIssuer: 
-  metroCertificateNotAfter: 0000000000000000
+  metroCertificateSubject: Prouser123
+  metroCertificateIssuer: Prouser123
+  metroCertificateNotAfter: 80177ca78079d501
   metroApplicationDescription: Collectables
   wsaImages: {}
   metroTileShortName: 

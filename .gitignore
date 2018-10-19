@@ -42,3 +42,6 @@ sysinfo.txt
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# UWP Certificates
+/Assets/WSATestCertificate.*

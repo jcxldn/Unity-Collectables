@@ -725,6 +725,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.canvas
+      value: 
+      objectReference: {fileID: 2046392105}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.countText
+      value: 
+      objectReference: {fileID: 2046392109}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.levelText
+      value: 
+      objectReference: {fileID: 2046392106}
+    - target: {fileID: 114791712512511678, guid: 0c48b42bb4ff93e468353fb8e84ef8f3,
+        type: 2}
+      propertyPath: Scene.levelUIElements.panel
+      value: 
+      objectReference: {fileID: 1951992370}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c48b42bb4ff93e468353fb8e84ef8f3, type: 2}
   m_IsPrefabAsset: 0
@@ -1746,6 +1766,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1951992370 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1515019823879830, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
 --- !u!1001 &1985598918
 Prefab:
   m_ObjectHideFlags: 0
@@ -2102,6 +2127,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bfd407e32c3bcd44a971b3457f69214, type: 2}
   m_IsPrefabAsset: 0
+--- !u!223 &2046392105 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 223933675418650544, guid: 1bfd407e32c3bcd44a971b3457f69214,
+    type: 2}
+  m_PrefabInternal: {fileID: 2046392104}
 --- !u!114 &2046392106 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114507135641379768, guid: 1bfd407e32c3bcd44a971b3457f69214,
@@ -2168,7 +2198,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &2066988183
 MonoBehaviour:
   m_ObjectHideFlags: 0
